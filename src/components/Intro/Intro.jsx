@@ -2,15 +2,13 @@ import pfpImage from "../../assets/imgs/pfp.png";
 
 export default function Intro() {
   return (
-    <div className="flex justify-center items-center z-[3] flex-col text-slate-50 lg:max-w-[38rem] max-w-[34rem] lg:mx-[6rem] gap-[1.7rem]">
+    <div className="flex justify-center items-center z-[3] flex-col text-slate-50 lg:max-w-[38rem] max-w-[34rem] lg:mx-[6rem] gap-[0.5rem] lg:gap-[1.7rem]">
       <img
-        width="140"
-        height="140"
-        className="rounded-full border-[3px] border-gray-50"
+        className="rounded-full border-[3px] border-gray-50 max-w-[140px]"
         src={pfpImage}
         alt="picture of myself"
       />
-      <h2 className="font-medium text-xl md:text-3xl text-wrap">
+      <h2 className="font-medium text-2xl md:text-3xl text-wrap">
         Hey!👋🏻 I'm <b>Anastasia</b>.
       </h2>
       <p className="font-medium text-lg md:text-3xl text-center !leading-[1.5]">

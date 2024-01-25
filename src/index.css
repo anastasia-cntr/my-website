@@ -7,15 +7,20 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #111827;
+  background: #0c1220;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a695ff92;
+  background: #e5e0ff79;
   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5e0ffd1;
 }
 
 body {
   margin: 0;
   scroll-behavior: smooth;
+  overflow: overlay;
 }

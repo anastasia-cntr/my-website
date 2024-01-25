@@ -9,9 +9,7 @@ let techlist = [
 export default function TechStack() {
   return (
     <div className="flex flex-col items-center justify-center gap-[2rem] pt-[2rem] border-t-[2px] text-slate-50">
-      <h2 className="font-bold text-xl md:text-3xl  md:font-medium">
-        My toolbox
-      </h2>
+      <h2 className="font-bold text-3xl md:font-medium">My toolbox</h2>
       <ul className="flex gap-[2rem] text-xl flex-col md:flex-row">
         {techlist.map((tech, index) => (
           <li className="hover:scale-125" key={index}>

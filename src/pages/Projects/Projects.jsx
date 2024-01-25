@@ -25,15 +25,15 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col gap-[4rem] max-w-[60%] lg:max-w-[50%] py-[1rem]"
+      className="flex flex-col gap-[4rem] lg:max-w-[50%] px-[5vw] py-[1rem]"
     >
       <h2 className="text-slate-50 text-center font-medium text-3xl">
         Projects
       </h2>
       {projects.map((project, index) => (
         <div key={index}>
-          <div className="bg-gray-700 rounded-lg gap-[2rem] p-[2rem] flex flex-col">
-            <h3 className="font-bold text-slate-50 text:sm lg:text-3xl">
+          <div className="bg-gray-700 rounded-lg gap-[2rem] p-[1rem] flex flex-col">
+            <h3 className="font-bold text-slate-50 text-2xl lg:text-3xl">
               {project.title}
             </h3>
             <p className="text-stone-300 font-medium leading-[1.6rem]">
@@ -43,7 +43,7 @@ export default function Projects() {
               {project.techStack.map((tech, index) => (
                 <li
                   key={index}
-                  className="text-stone-200 font-medium bg-slate-800 py-2 px-4 rounded-lg"
+                  className="text-stone-200 font-medium bg-slate-800 text-md py-[0.3rem] px-[0.3rem] lg:py-2 lg:px-4 rounded-lg"
                 >
                   {tech}
                 </li>
@@ -57,7 +57,7 @@ export default function Projects() {
               <button className="text-slate-50 bg-[#000000a8] px-5 py-3 rounded-md">
                 Live Demo &rarr;
               </button>
-              <div className="flex gap-1 text-slate-50 bg-[#000000a8] px-5 py-3 rounded-md  ">
+              <div className="flex items-center justify-center gap-1 text-slate-50 bg-[#000000a8] px-5 py-3 rounded-md">
                 <button>Code </button>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
